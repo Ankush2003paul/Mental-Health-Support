@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #495057;
+    text-align: center; /* Center-align all text content */
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1.5em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #469fda;
+    padding: 1em;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #24bbe9;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#breathing-animation {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #87CEEB;
+    margin: 20px auto; /* Center the element horizontally */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    animation: breathing 4s infinite alternate;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#breathingBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+#breathingBtn {
+    background-color: #3498db;
+    color:black;
+}
+body {
+    background-image: linear-gradient(75deg, rgba(252,224,67, 0.8) 0%, rgba(251,123,162, 0.8) 100%);
+}
