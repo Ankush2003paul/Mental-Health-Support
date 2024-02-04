@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles1.css">
+    <script src="https://unpkg.com/howler@2.2.3/dist/howler.js"></script>
+    <title>Mental Health Support</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mental Health Support</h1>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="./index.html" onclick="loadContent('home')">Home</a></li>
+        <!-- <li><a href="activity.html" onclick="loadContent('activities')">Activities</a></li> -->
+        <li><a href="./activityIndex.html">Activities</a></li>
+        <li><a href="/Mental Health/3/index.html" onclick="loadContent('chat')">Chat</a></li>
+        <li><a href="#" onclick="loadContent('contact')">Contact</a></li>
+    </ul>
+    </nav>
+
+    <main>
+        <section id="intro">                                                       
+            <h2>Welcome to our Mental Health Support Website</h2>
+            <p>This platform is designed to help you manage anxiety, stress, and depression. Take a step towards relaxation and well-being.</p>
+        </section>
+
+        <section id="breathing-exercise">
+            <h2>Quick Breathing Exercise</h2>
+            <p>Follow the animation below to practice deep breathing and relax your mind.</p>
+            <div id="breathing-animation"></div>
+            <button id="breathingBtn">Start Breathing Exercise</button>   
+        </section>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Explore the following resources for more information and support:</p>
+            <ul>
+                <li><a href="https://www.nimh.nih.gov/health/topics/anxiety-disorders" target="_blank">NIMH - Anxiety Disorders</a></li>
+                <!-- Add more resource links as needed -->
+            </ul>
+        </section>
+
+         <!-- Add a section for relaxing sounds -->
+        <section id="relaxing-sounds">
+            <h2>Relaxing Sounds</h2>
+            <p>Choose a calming sound to enhance relaxation:</p>
+            <select id="soundSelector">
+                <option value="ocean">Ocean Waves</option>
+                <option value="forest">Forest Birds</option>
+                <option value="rain">Gentle Rain</option>
+            </select>
+            <button id="playSoundBtn">Play Sound</button>
+            <button id="stopSoundBtn">Stop Sound</button>
+        </section>
+
+
+
+        <section id="quotes">
+            <h2>Quotes for Inspiration</h2>
+            <p id="quotePlaceholder">Loading...</p>
+            <button id="newQuoteBtn">Get New Quote</button>
+        </section>
+
+        <section id="minigames">
+            <h2>Mini Games </h2>
+            <p>Take breaks from meditation with these fun mini games </p>
+            <button id="play_games"><a href="/Mental Health/play_games/index.html"> Play Games </a> </button>
+        </section>
+
+        <section id="journal">
+            <h2>Journal</h2>
+            <textarea id="journalEntry" placeholder="Write down your thoughts..."></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Support</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
